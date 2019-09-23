@@ -21,5 +21,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/pelanggan/hapus/{id}','HomeController@hapus');
 Route::get('/pelanggan/cari','HomeController@cari');
 
+Route::post('/pelanggan/store','HomeController@store');
+Route::post('/pelanggan/update','HomeController@update');
+Route::post('/pelanggan/edit/{id}','HomeController@edit');
+
 Route::get('/dashboard','DashboardController@index');
 Route::get('/convert','DashboardController@convert');

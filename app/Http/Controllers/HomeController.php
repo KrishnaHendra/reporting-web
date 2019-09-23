@@ -30,7 +30,7 @@ class HomeController extends Controller
 
     public function hapus(Request $req, $id){
         DB::table('pelanggan')->where('id_pelanggan',$id)->delete();
-        $req->session()->flash('notifdelete', 'Data pelanggan Berhasil Dihapus!');
+        $req->session()->flash('notifdelete', 'Data Pelanggan Berhasil Dihapus!');
         return redirect('/home');
     }
 
@@ -45,5 +45,34 @@ class HomeController extends Controller
 
         // mengirim data pelanggan ke view index
         return view('home',['pelanggan'=> $pelanggan]);
+    }
+
+    public function store(Request $request){
+        DB::table('pelanggan')->insert([
+            'nama' => $request->nama,
+            'telepon' => $request->telepon,
+            'alamat' => $request->alamat,
+            'jumlah' => $request->jumlah,
+            'id_status' => $request->status
+        ]);
+        $request->session()->flash('notifadd',' Data Telah Ditambahkan! ');
+        return redirect('/home');
+    }
+
+    public function edit($id){
+        $pelanggan = DB::table('pelanggan')->where('id_pelanggan',$id)->get();
+        return view('home',['pelanggan'=>$pelanggan]);
+    }
+
+    public function update(Request $req){
+        DB::table('pelanggan')->where('id_pelanggan',$req->id)->update([
+            'nama' => $req->nama,
+            'telepon' => $req->telepon,
+            'alamat' => $req->alamat,
+            'jumlah' => $req->jumlah,
+            'id_status' => $req->status
+        ]);
+        $req->session()->flash('notifedit', 'Transaksi Berhasil!');
+        return redirect('/home');
     }
 }
