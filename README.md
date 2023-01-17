@@ -9,7 +9,6 @@ Website report with Laravel 8
 - Forgot Password
 - Remember Me
 - Dynamic Role
-    - Adminstrator
     - Accounting
     - Manager
     - Chef
