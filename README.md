@@ -7,4 +7,3 @@ Website report with Laravel 8
 - Sign In Page
 - Sign Up Page
 - Forgot Password
-- Remember Me
