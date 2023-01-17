@@ -18,4 +18,3 @@ Website report with Laravel 8
     - Create
     - Read
     - Update
-    - Delete
