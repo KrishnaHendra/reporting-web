@@ -10,5 +10,4 @@ Website report with Laravel 8
 - Remember Me
 - Dynamic Role
     - Accounting
-    - Chef
 - Dynamic Function
