@@ -10,7 +10,6 @@ Website report with Laravel 8
 - Remember Me
 - Dynamic Role
     - Accounting
-    - Manager
     - Chef
     - Customer
 - Dynamic Function
