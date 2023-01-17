@@ -9,4 +9,3 @@ Website report with Laravel 8
 - Forgot Password
 - Remember Me
 - Dynamic Role
-- Dynamic Function
