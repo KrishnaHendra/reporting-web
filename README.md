@@ -12,4 +12,3 @@ Website report with Laravel 8
     - Accounting
     - Chef
 - Dynamic Function
-    - Create
