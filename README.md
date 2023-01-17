@@ -11,7 +11,6 @@ Website report with Laravel 8
 - Dynamic Role
     - Accounting
     - Chef
-    - Customer
 - Dynamic Function
     - Create
     - Read
