@@ -4,4 +4,3 @@ Website report with Laravel 8
 ```
 ssasdadasasasdadaa
 ssasdasdasdasdasda
-asdasdasdassdaadas
